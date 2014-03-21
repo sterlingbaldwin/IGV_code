@@ -1,0 +1,747 @@
+# depslib dependency file v1.0
+1269721797 source:c:\users\brian\desktop\new igv\calfile.c
+	"calfile.h"
+
+1269721797 c:\users\brian\desktop\new igv\calfile.h
+	<stdio.h>
+
+1243648794 source:c:\users\brian\desktop\new igv\wcomm.cpp
+	"wcomm.h"
+
+1243639344 c:\users\brian\desktop\new igv\wcomm.h
+	"winsock2.h"
+	<stdio.h>
+	<conio.h>
+	"iostream.h"
+	"fstream.h"
+
+1269721562 source:c:\users\brian\desktop\new igv\cvtest.cpp
+	"globals.h"
+	"stereo.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	"line.h"
+	"Decision 1.3.h"
+
+1244412376 c:\users\brian\desktop\new igv\calfile.c
+	<stdio.h>
+	"calfile.h"
+
+1270929002 c:\users\brian\desktop\new igv\line.h
+	<cv.h>
+	<cxcore.h>
+	<highgui.h>
+
+1254001710 c:\opencv2.0\include\opencv\cv.h
+	<chdl.h>
+	"cxcore.h"
+	"cvtypes.h"
+	"cv.hpp"
+	"cvcompat.h"
+
+1254001710 c:\opencv2.0\include\opencv\cxcore.h
+	"ipl.h"
+	"ipl/ipl.h"
+	"cxtypes.h"
+	"cxerror.h"
+	"cvver.h"
+	"cxcore.hpp"
+
+1254331956 c:\opencv2.0\include\opencv\cxtypes.h
+	<assert.h>
+	<stdlib.h>
+	<string.h>
+	<float.h>
+	<stdint.h>
+	<emmintrin.h>
+	<mmintrin.h>
+	<fastmath.h>
+	<math.h>
+	<ipl.h>
+	<ipl/ipl.h>
+
+1254001710 c:\opencv2.0\include\opencv\cxerror.h
+
+1254326910 c:\opencv2.0\include\opencv\cvver.h
+
+1254326910 c:\opencv2.0\include\opencv\cxcore.hpp
+	"cxmisc.h"
+	<algorithm>
+	<cmath>
+	<complex>
+	<map>
+	<new>
+	<string>
+	<vector>
+	"cxoperations.hpp"
+	"cxmat.hpp"
+	"cxflann.h"
+
+1254001710 c:\opencv2.0\include\opencv\cxmisc.h
+	"cvconfig.h"
+	<limits.h>
+	"omp.h"
+	<malloc.h>
+	<alloca.h>
+	<stdlib.h>
+
+1269190556 c:\opencv2.0\include\opencv\cxoperations.hpp
+	<string.h>
+	<limits.h>
+	<ext/atomicity.h>
+	<bits/atomicity.h>
+	"windows.h"
+
+1254329798 c:\opencv2.0\include\opencv\cxmat.hpp
+	<limits.h>
+
+1254001710 c:\opencv2.0\include\opencv\cxflann.h
+
+1254001710 c:\opencv2.0\include\opencv\cvtypes.h
+	<assert.h>
+	<stdlib.h>
+
+1254094444 c:\opencv2.0\include\opencv\cv.hpp
+
+1254001710 c:\opencv2.0\include\opencv\cvcompat.h
+	<string.h>
+
+1254001710 c:\opencv2.0\include\opencv\highgui.h
+	"cxcore.h"
+	<windows.h>
+	<chdl.h>
+	"highgui.hpp"
+
+1254001712 c:\opencv2.0\include\opencv\highgui.hpp
+
+1269718598 c:\users\brian\desktop\new igv\stereo.h
+	"triclops.h"
+	"pgrflycapture.h"
+	"pgrflycapturestereo.h"
+	"pnmutils.h"
+
+1175122386 c:\program files\point grey research\triclops stereo vision sdk\include\triclops.h
+	<triclops3d.h>
+	<triclopsbuffer.h>
+	<triclopscontext.h>
+	<triclopsvalidation.h>
+	<triclopsrectify.h>
+	<triclopsstereo.h>
+	<triclopsimageio.h>
+
+1082498718 c:\program files\point grey research\triclops stereo vision sdk\include\triclops3d.h
+	<triclops.h>
+
+1099947132 c:\program files\point grey research\triclops stereo vision sdk\include\triclopsbuffer.h
+	<triclops.h>
+
+1174602118 c:\program files\point grey research\triclops stereo vision sdk\include\triclopscontext.h
+	<triclops.h>
+
+1082498718 c:\program files\point grey research\triclops stereo vision sdk\include\triclopsvalidation.h
+	<triclops.h>
+
+1086216002 c:\program files\point grey research\triclops stereo vision sdk\include\triclopsrectify.h
+	<triclops.h>
+
+1082498718 c:\program files\point grey research\triclops stereo vision sdk\include\triclopsstereo.h
+	<triclops.h>
+
+1083691036 c:\program files\point grey research\triclops stereo vision sdk\include\triclopsimageio.h
+	<triclops.h>
+
+1269716261 c:\program files\point grey research\pgr flycapture\include\pgrflycapture.h
+
+1176743396 c:\program files\point grey research\pgr flycapture\include\pgrflycapturestereo.h
+	<windows.h>
+	"pgrflycapture.h"
+
+1071175866 c:\program files\point grey research\triclops stereo vision sdk\include\pnmutils.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"triclops.h"
+
+1269719109 c:\users\brian\desktop\new igv\decision 1.3.h
+
+1244159738 c:\users\brian\desktop\new igv\ethernet.h
+
+1270923192 c:\users\brian\desktop\new igv\globals.h
+	"windows.h"
+	"time.h"
+	<math.h>
+
+1269721797 source:c:\users\brian\desktop\4-12-10\calfile.c
+	"calfile.h"
+
+1269721797 c:\users\brian\desktop\4-12-10\calfile.h
+	<stdio.h>
+
+1269721562 source:c:\users\brian\desktop\4-12-10\cvtest.cpp
+	"globals.h"
+	"stereo.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	"line.h"
+	"Decision 1.3.h"
+
+1270923192 c:\users\brian\desktop\4-12-10\globals.h
+	"windows.h"
+	"time.h"
+	<math.h>
+
+1273949697 c:\users\brian\desktop\4-12-10\stereo.h
+	"triclops.h"
+	"pgrflycapture.h"
+	"pgrflycapturestereo.h"
+	"pnmutils.h"
+
+1270929002 c:\users\brian\desktop\4-12-10\line.h
+	<cv.h>
+	<cxcore.h>
+	<highgui.h>
+
+1269719109 c:\users\brian\desktop\4-12-10\decision 1.3.h
+
+1274839835 source:c:\users\brian\desktop\5-25-10\calfile.c
+	"calfile.h"
+
+1274900901 c:\users\brian\desktop\5-25-10\calfile.h
+
+1274913703 source:c:\users\brian\desktop\5-25-10\cvtest.cpp
+	"globals.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	"afsocket.h"
+	"decide.h"
+	"gps.h"
+	"compass.h"
+	"stereo.h"
+	"calfile.h"
+	"line.h"
+
+1274908346 c:\users\brian\desktop\5-25-10\globals.h
+	<windows.h>
+	<time.h>
+	<math.h>
+	"circle.h"
+	"serial.h"
+	"gps.h"
+
+1274900901 c:\users\brian\desktop\5-25-10\stereo.h
+	"globals.h"
+	"triclops.h"
+	"pgrflycapture.h"
+	"pgrflycapturestereo.h"
+	"pnmutils.h"
+
+1274908346 c:\users\brian\desktop\5-25-10\line.h
+	"globals.h"
+	<cv.h>
+	<cxcore.h>
+	<highgui.h>
+
+1274832596 c:\users\brian\desktop\5-25-10\decision 1.3.h
+
+1274913736 source:c:\users\brian\desktop\5-25-10\gps.cpp
+	"gps.h"
+
+1274900901 c:\users\brian\desktop\5-25-10\gps.h
+	<windows.h>
+	"serial.h"
+	<cmath>
+	<vector>
+	<fstream>
+
+1274900901 c:\users\brian\desktop\5-25-10\serial.h
+	<windows.h>
+	<iostream>
+
+1274900901 source:c:\users\brian\desktop\5-25-10\serial.cpp
+	"serial.h"
+
+1274900901 source:c:\users\brian\desktop\5-25-10\compass.cpp
+	"compass.h"
+
+1274900901 c:\users\brian\desktop\5-25-10\compass.h
+	"serial.h"
+	<cstring>
+
+1274904016 source:c:\users\brian\desktop\5-25-10\decide.cpp
+	<iostream>
+	<cmath>
+	<map>
+	<utility>
+	<algorithm>
+	"globals.h"
+
+1274904369 c:\users\brian\desktop\5-25-10\circle.h
+
+1274901741 c:\users\brian\desktop\5-25-10\decide.cpp
+	<iostream>
+	<cmath>
+	<map>
+	<utility>
+	<algorithm>
+	"globals.h"
+
+1274911271 source:c:\users\brian\desktop\5-25-10\afsocket.cpp
+	"afsocket.h"
+	"globals.h"
+
+1274909496 c:\users\brian\desktop\5-25-10\afsocket.h
+	"globals.h"
+	<winsock2.h>
+	<ws2tcpip.h>
+	<stdlib.h>
+	<stdio.h>
+
+1274900925 source:c:\users\brian\desktop\5-25-10\calfile.cpp
+	"calfile.h"
+	<fstream>
+
+1274901255 source:c:\users\brian\desktop\5-25-10\globals.cpp
+	"globals.h"
+
+1274913486 c:\users\brian\desktop\5-25-10\decide.h
+	<iostream>
+	<cmath>
+	<map>
+	<utility>
+	<algorithm>
+	"globals.h"
+
+1274935114 source:f:\documents and settings\igvc\desktop\5-25-10\afsocket.cpp
+	"afsocket.h"
+	"globals.h"
+
+1274931196 f:\documents and settings\igvc\desktop\5-25-10\afsocket.h
+	"globals.h"
+	<winsock2.h>
+	<ws2tcpip.h>
+	<stdlib.h>
+	<stdio.h>
+
+1274930105 f:\documents and settings\igvc\desktop\5-25-10\globals.h
+	<windows.h>
+	<time.h>
+	<math.h>
+	"circle.h"
+	"serial.h"
+	"gps.h"
+
+1274904370 f:\documents and settings\igvc\desktop\5-25-10\circle.h
+
+1274900902 f:\documents and settings\igvc\desktop\5-25-10\serial.h
+	<windows.h>
+	<iostream>
+
+1274900902 f:\documents and settings\igvc\desktop\5-25-10\gps.h
+	<windows.h>
+	"serial.h"
+	<cmath>
+	<vector>
+	<fstream>
+
+1274900926 source:f:\documents and settings\igvc\desktop\5-25-10\calfile.cpp
+	"calfile.h"
+	<fstream>
+
+1274900902 f:\documents and settings\igvc\desktop\5-25-10\calfile.h
+
+1274900902 source:f:\documents and settings\igvc\desktop\5-25-10\compass.cpp
+	"compass.h"
+
+1274900902 f:\documents and settings\igvc\desktop\5-25-10\compass.h
+	"serial.h"
+	<cstring>
+
+1274901256 source:f:\documents and settings\igvc\desktop\5-25-10\globals.cpp
+	"globals.h"
+
+1274913738 source:f:\documents and settings\igvc\desktop\5-25-10\gps.cpp
+	"gps.h"
+
+1274900902 source:f:\documents and settings\igvc\desktop\5-25-10\serial.cpp
+	"serial.h"
+
+1274930585 source:f:\documents and settings\igvc\desktop\5-25-10\cvtest.cpp
+	"globals.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	"afsocket.h"
+	"decide.h"
+	"gps.h"
+	"compass.h"
+	"stereo.h"
+	"calfile.h"
+	"line.h"
+
+1274943667 f:\documents and settings\igvc\desktop\5-25-10\decide.h
+	<iostream>
+	<cmath>
+	<map>
+	<utility>
+	<algorithm>
+	"globals.h"
+
+1274900902 f:\documents and settings\igvc\desktop\5-25-10\stereo.h
+	"globals.h"
+	"triclops.h"
+	"pgrflycapture.h"
+	"pgrflycapturestereo.h"
+	"pnmutils.h"
+
+1274941720 f:\documents and settings\igvc\desktop\5-25-10\line.h
+	"globals.h"
+	<cv.h>
+	<cxcore.h>
+	<highgui.h>
+
+1278965392 f:\program files\point grey research\triclops stereo vision sdk\include\triclops.h
+	<triclops3d.h>
+	<triclopsbuffer.h>
+	<triclopscontext.h>
+	<triclopsvalidation.h>
+	<triclopsrectify.h>
+	<triclopsstereo.h>
+	<triclopsimageio.h>
+
+1196390584 f:\program files\point grey research\triclops stereo vision sdk\include\triclops3d.h
+	<triclops.h>
+
+1196390584 f:\program files\point grey research\triclops stereo vision sdk\include\triclopsbuffer.h
+	<triclops.h>
+
+1277420658 f:\program files\point grey research\triclops stereo vision sdk\include\triclopscontext.h
+	<triclops.h>
+
+1196390584 f:\program files\point grey research\triclops stereo vision sdk\include\triclopsvalidation.h
+	<triclops.h>
+
+1277420658 f:\program files\point grey research\triclops stereo vision sdk\include\triclopsrectify.h
+	<triclops.h>
+
+1277149568 f:\program files\point grey research\triclops stereo vision sdk\include\triclopsstereo.h
+	<triclops.h>
+
+1196390584 f:\program files\point grey research\triclops stereo vision sdk\include\triclopsimageio.h
+	<triclops.h>
+
+1295973400 f:\program files\point grey research\pgr flycapture\include\pgrflycapture.h
+
+1176743396 f:\program files\point grey research\pgr flycapture\include\pgrflycapturestereo.h
+	<windows.h>
+	"pgrflycapture.h"
+
+1204851846 f:\program files\point grey research\triclops stereo vision sdk\include\pnmutils.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"triclops.h"
+
+1254001710 f:\opencv2.0\include\opencv\cv.h
+	<chdl.h>
+	"cxcore.h"
+	"cvtypes.h"
+	"cv.hpp"
+	"cvcompat.h"
+
+1254001710 f:\opencv2.0\include\opencv\cxcore.h
+	"ipl.h"
+	"ipl/ipl.h"
+	"cxtypes.h"
+	"cxerror.h"
+	"cvver.h"
+	"cxcore.hpp"
+
+1254331956 f:\opencv2.0\include\opencv\cxtypes.h
+	<assert.h>
+	<stdlib.h>
+	<string.h>
+	<float.h>
+	<stdint.h>
+	<emmintrin.h>
+	<mmintrin.h>
+	<fastmath.h>
+	<math.h>
+	<ipl.h>
+	<ipl/ipl.h>
+
+1254001710 f:\opencv2.0\include\opencv\cxerror.h
+
+1254326910 f:\opencv2.0\include\opencv\cvver.h
+
+1254326910 f:\opencv2.0\include\opencv\cxcore.hpp
+	"cxmisc.h"
+	<algorithm>
+	<cmath>
+	<complex>
+	<map>
+	<new>
+	<string>
+	<vector>
+	"cxoperations.hpp"
+	"cxmat.hpp"
+	"cxflann.h"
+
+1254001710 f:\opencv2.0\include\opencv\cxmisc.h
+	"cvconfig.h"
+	<limits.h>
+	"omp.h"
+	<malloc.h>
+	<alloca.h>
+	<stdlib.h>
+
+1274920115 f:\opencv2.0\include\opencv\cxoperations.hpp
+	<string.h>
+	<limits.h>
+	<ext/atomicity.h>
+	<bits/atomicity.h>
+	"windows.h"
+
+1254329798 f:\opencv2.0\include\opencv\cxmat.hpp
+	<limits.h>
+
+1254001710 f:\opencv2.0\include\opencv\cxflann.h
+
+1254001710 f:\opencv2.0\include\opencv\cvtypes.h
+	<assert.h>
+	<stdlib.h>
+
+1254094444 f:\opencv2.0\include\opencv\cv.hpp
+
+1254001710 f:\opencv2.0\include\opencv\cvcompat.h
+	<string.h>
+
+1254001710 f:\opencv2.0\include\opencv\highgui.h
+	"cxcore.h"
+	<windows.h>
+	<chdl.h>
+	"highgui.hpp"
+
+1254001712 f:\opencv2.0\include\opencv\highgui.hpp
+
+1274945681 source:f:\documents and settings\igvc\desktop\5-27-10\afsocket.cpp
+	"afsocket.h"
+	"globals.h"
+
+1274945542 f:\documents and settings\igvc\desktop\5-27-10\afsocket.h
+	"globals.h"
+	<winsock2.h>
+	<ws2tcpip.h>
+	<stdlib.h>
+	<stdio.h>
+
+1274930105 f:\documents and settings\igvc\desktop\5-27-10\globals.h
+	<windows.h>
+	<time.h>
+	<math.h>
+	"circle.h"
+	"serial.h"
+	"gps.h"
+
+1274904370 f:\documents and settings\igvc\desktop\5-27-10\circle.h
+
+1274900902 f:\documents and settings\igvc\desktop\5-27-10\serial.h
+	<windows.h>
+	<iostream>
+
+1274900902 f:\documents and settings\igvc\desktop\5-27-10\gps.h
+	<windows.h>
+	"serial.h"
+	<cmath>
+	<vector>
+	<fstream>
+
+1274900926 source:f:\documents and settings\igvc\desktop\5-27-10\calfile.cpp
+	"calfile.h"
+	<fstream>
+
+1274900902 f:\documents and settings\igvc\desktop\5-27-10\calfile.h
+
+1274900902 source:f:\documents and settings\igvc\desktop\5-27-10\compass.cpp
+	"compass.h"
+
+1274900902 f:\documents and settings\igvc\desktop\5-27-10\compass.h
+	"serial.h"
+	<cstring>
+
+1274901256 source:f:\documents and settings\igvc\desktop\5-27-10\globals.cpp
+	"globals.h"
+
+1274913738 source:f:\documents and settings\igvc\desktop\5-27-10\gps.cpp
+	"gps.h"
+
+1274900902 source:f:\documents and settings\igvc\desktop\5-27-10\serial.cpp
+	"serial.h"
+
+1274930585 source:f:\documents and settings\igvc\desktop\5-27-10\cvtest.cpp
+	"globals.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	"afsocket.h"
+	"decide.h"
+	"gps.h"
+	"compass.h"
+	"stereo.h"
+	"calfile.h"
+	"line.h"
+
+1274946162 f:\documents and settings\igvc\desktop\5-27-10\decide.h
+	<iostream>
+	<cmath>
+	<map>
+	<utility>
+	<algorithm>
+	"globals.h"
+
+1274900902 f:\documents and settings\igvc\desktop\5-27-10\stereo.h
+	"globals.h"
+	"triclops.h"
+	"pgrflycapture.h"
+	"pgrflycapturestereo.h"
+	"pnmutils.h"
+
+1274941720 f:\documents and settings\igvc\desktop\5-27-10\line.h
+	"globals.h"
+	<cv.h>
+	<cxcore.h>
+	<highgui.h>
+
+1274900926 source:f:\documents and settings\igvc\desktop\5-27-10 2\calfile.cpp
+	"calfile.h"
+	<fstream>
+
+1274900902 f:\documents and settings\igvc\desktop\5-27-10 2\calfile.h
+
+1274900902 source:f:\documents and settings\igvc\desktop\5-27-10 2\compass.cpp
+	"compass.h"
+
+1274900902 f:\documents and settings\igvc\desktop\5-27-10 2\compass.h
+	"serial.h"
+	<cstring>
+
+1274900902 f:\documents and settings\igvc\desktop\5-27-10 2\serial.h
+	<windows.h>
+	<iostream>
+
+1274901256 source:f:\documents and settings\igvc\desktop\5-27-10 2\globals.cpp
+	"globals.h"
+
+1274930105 f:\documents and settings\igvc\desktop\5-27-10 2\globals.h
+	<windows.h>
+	<time.h>
+	<math.h>
+	"circle.h"
+	"serial.h"
+	"gps.h"
+
+1274904370 f:\documents and settings\igvc\desktop\5-27-10 2\circle.h
+
+1274900902 f:\documents and settings\igvc\desktop\5-27-10 2\gps.h
+	<windows.h>
+	"serial.h"
+	<cmath>
+	<vector>
+	<fstream>
+
+1274913738 source:f:\documents and settings\igvc\desktop\5-27-10 2\gps.cpp
+	"gps.h"
+
+1274900902 source:f:\documents and settings\igvc\desktop\5-27-10 2\serial.cpp
+	"serial.h"
+
+1274985788 source:f:\documents and settings\igvc\desktop\igvc code\old igvs\5-27-10 2\afsocket.cpp
+	"afsocket.h"
+	"globals.h"
+
+1274985788 f:\documents and settings\igvc\desktop\igvc code\old igvs\5-27-10 2\afsocket.h
+	"globals.h"
+	<winsock2.h>
+	<ws2tcpip.h>
+	<stdlib.h>
+	<stdio.h>
+
+1367111469 f:\documents and settings\igvc\desktop\igvc code\old igvs\5-27-10 2\globals.h
+	<windows.h>
+	<time.h>
+	<math.h>
+	"circle.h"
+	"serial.h"
+	"gps.h"
+
+1274904370 f:\documents and settings\igvc\desktop\igvc code\old igvs\5-27-10 2\circle.h
+
+1274900902 f:\documents and settings\igvc\desktop\igvc code\old igvs\5-27-10 2\serial.h
+	<windows.h>
+	<iostream>
+
+1274900902 f:\documents and settings\igvc\desktop\igvc code\old igvs\5-27-10 2\gps.h
+	<windows.h>
+	"serial.h"
+	<cmath>
+	<vector>
+	<fstream>
+
+1367103187 source:f:\documents and settings\igvc\desktop\igvc code\old igvs\5-27-10 2\calfile.cpp
+	"calfile.h"
+	<fstream>
+
+1274900902 f:\documents and settings\igvc\desktop\igvc code\old igvs\5-27-10 2\calfile.h
+
+1274900902 source:f:\documents and settings\igvc\desktop\igvc code\old igvs\5-27-10 2\compass.cpp
+	"compass.h"
+
+1274900902 f:\documents and settings\igvc\desktop\igvc code\old igvs\5-27-10 2\compass.h
+	"serial.h"
+	<cstring>
+
+1274901256 source:f:\documents and settings\igvc\desktop\igvc code\old igvs\5-27-10 2\globals.cpp
+	"globals.h"
+
+1274913738 source:f:\documents and settings\igvc\desktop\igvc code\old igvs\5-27-10 2\gps.cpp
+	"gps.h"
+
+1274900902 source:f:\documents and settings\igvc\desktop\igvc code\old igvs\5-27-10 2\serial.cpp
+	"serial.h"
+
+1367117285 source:f:\documents and settings\igvc\desktop\igvc code\old igvs\5-27-10 2\cvtest.cpp
+	"globals.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	"afsocket.h"
+	"decide.h"
+	"gps.h"
+	"compass.h"
+	"stereo.h"
+	"calfile.h"
+	"line.h"
+
+1274946162 f:\documents and settings\igvc\desktop\igvc code\old igvs\5-27-10 2\decide.h
+	<iostream>
+	<cmath>
+	<map>
+	<utility>
+	<algorithm>
+	"globals.h"
+
+1367119530 f:\documents and settings\igvc\desktop\igvc code\old igvs\5-27-10 2\stereo.h
+	"globals.h"
+	"triclops.h"
+	"pgrflycapture.h"
+	"pgrflycapturestereo.h"
+	"pnmutils.h"
+
+1367111451 f:\documents and settings\igvc\desktop\igvc code\old igvs\5-27-10 2\line.h
+	"globals.h"
+	<cv.h>
+	<cxcore.h>
+	<highgui.h>
+

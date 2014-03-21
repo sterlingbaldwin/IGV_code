@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<VisualStudioPropertySheet 
+	ProjectType="Visual C++" 
+	Version="8.00" 
+	Name="FlycapExternInc64"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="C:\Program Files\Point Grey Research\PGR FlyCapture\include"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalLibraryDirectories="C:\Program Files\Point Grey Research\PGR FlyCapture\lib64"
+	/>
+</VisualStudioPropertySheet>
