@@ -61,8 +61,8 @@ def main():
     # Make sure we can establish a connection with Gir
     socket = 0
     try:
-        socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        socket.connect((SLAVE, PORT))
+        #socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        #socket.connect((SLAVE, PORT))
     except:
         print "A connection could not be made, giving up."
         sys.exit(1)
