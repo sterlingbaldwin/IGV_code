@@ -14,7 +14,9 @@ except:
     print "A connection could not be made"
     sys.exit(1)
 
-
+s.sendall('PR 5000,5000; AC 50000,50000; SP 5000,5000 \r')
+data = s.recv(1024)
+print data
 
 
 
@@ -55,19 +57,19 @@ class App(object):
 	cmd = ""
 	
     	if self.right:
-		cmd = 'JG 2000,0;'
-		print cmd
-   	elif self.left:
-		cmd = 'JG 0,2000;'
-		print cmd
-	elif self.up:
-		cmd = 'JG 5000,5000;BG;'
-		print cmd
+			cmd = 'BG A;'
+			print cmd
+   		elif self.left:
+			cmd = 'BG B;'
+			print cmd
+		elif self.up:
+			cmd = 'BG A,B;'
+			print cmd
     	elif self.down:
-		cmd = 'ST'
-		print cmd
+			cmd = s.sendall('PR -5000,-5000; AC -50000,-50000; SP -5000,-5000; BG; \r')
+			print cmd
     	else:
-		cmd = ''
+			cmd = ''
     	s.sendall(cmd + '\r')
     	data = s.recv(1024)
     	print data
