@@ -17,7 +17,10 @@ except:
 
 while 1:
     cmd = raw_input(">> ")
-    s.sendall(cmd)
+    if cmd == 'q' or cmd == 'Q':
+        s.sendall('ST\r')
+        break
+    s.sendall(cmd + '\r')
     data = s.recv(1024)
     print data
 
