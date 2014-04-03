@@ -1,9 +1,0 @@
-# depslib dependency file v1.0
-1390257287 source:c:\users\generalpandamonium\documents\pctconvert\main.cpp
-	<iostream>
-	<fstream>
-	<stdlib.h>
-	<pcl/io/pcd_io.h>
-	<pcl/io/impl/pcd_io.hpp>
-	<pcl/point_types.h>
-
