@@ -16,10 +16,6 @@ def parse_args():
 def main():
     args = parse_args()
 
-    if args.command is None:
-        print "Error: An empty or nil command can't be sent, giving up."
-        sys.exit(1)
-
     if args.development:
         SLAVE = ''
         PORT = 50000
@@ -28,16 +24,16 @@ def main():
             sys.exit(1)
 
     cmd = ' '.join(args.command) + '\r'
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     try:
-        s.connect((SLAVE, PORT))
-        s.sendall(cmd)
-        data = s.recv(1024)
+        sock.connect((SLAVE, PORT))
+        sock.sendall(cmd)
+        data = sock.recv(1024)
         print data
-        s.close()
+        sock.close()
     except:
         print 'A connection could not be made to the designated server, giving up.'
-        s.close()
+        sock.close()
         sys.exit(1)
 
     sys.exit(0)

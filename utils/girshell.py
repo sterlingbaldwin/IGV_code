@@ -2,46 +2,54 @@
 import argparse
 import socket
 import sys
+import os
 
 SLAVE = '169.254.159.73'
 PORT = 23
 
-def create_parser():
-    parser = argparse.ArgumentParser('A simple CLI tool for interacting with Gir.')
+def parse_args():
+    parser = argparse.ArgumentParser('An interactive shell for interfacing with the IVG bot.')
     parser.add_argument('-d', '--development', action = 'store_true', help = 'Uses the development server')
-    parser.add_argument('cmd', 'command', nargs = ? help = 'Command to send to Gir')
-    return parser
+    return parser.parse_args()
 
+def mainloop(sock):
+    while (1):
+        cmd = raw_input('>> ')
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.connect((SLAVE, PORT))
+        if cmd == 'quit':
+            sock.sendall('ST\r')    
+            sock.close()
+            break
+        else:
+            sock.sendall(cmd + '\r')
+        data = sock.recv(1024)
+        print data
+        sock.close()
 
 def main():
     print "Welcome to the IGV shell! Enter commands to talk to Gir."
+    args = parse_args()
 
-    parser = create_parser()
-
-    sock = 0
-    try:
-        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        sock.connect((SLAVE, PORT))
-    except:
-        print "A connection could not be made"
+    if args.development:
+        SLAVE = 'localhost'
+        PORT = 50000
+    
+    if os.system('nc -z ' + SLAVE + ' ' + PORT) is None:
+        print 'Could not create a connection to the designated server, giving up.'
         sys.exit(1)
 
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     try:
-        while 1:
-            cmd = raw_input(">> ")
-            if cmd == 'q' or cmd == 'Q':
-                s.sendall('ST\r')
-                break
-            sock.sendall(cmd + '\r')
-            data = sock.recv(1024)
-            print data
-
-        s.close()
+        mainloop(sock)
     except KeyboardInterrupt:
         if sock: sock.close()
+        sys.exit(0)
     except:
         if sock: sock.close()
         raise
+
+    sys.exit(0)
 
 if __name__ == '__main__':
     main()
