@@ -1,0 +1,87 @@
+TIGV_BRAINS
+v6
+r1
+cCheck dependencies
+cCompileC build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/Objects-normal/x86_64/main.o /Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/IGV_BRAINS/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/Objects-normal/x86_64/Bumblebee.o /Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/IGV_BRAINS/Bumblebee.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c0000000052ABA491000000000000044C
+t1386980497
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000052ABA49100000000000001DB
+t1386980497
+s475
+
+N/Users/sterling/Desktop/Sterling's LOCALHOST/code/Robotic Code/IGV_BRAINS/IGV_BRAINS/Bumblebee.cpp
+c0000000052B60FA200000000000006B4
+t1387663266
+s1716
+
+N/Users/sterling/Desktop/Sterling's LOCALHOST/code/Robotic Code/IGV_BRAINS/IGV_BRAINS/main.cpp
+c0000000052B60FA200000000000001C8
+t1387663266
+s456
+
+N/Users/sterling/Desktop/Sterling's LOCALHOST/code/Robotic Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/Objects-normal/x86_64/Bumblebee.o
+t2
+s0
+
+N/Users/sterling/Desktop/Sterling's LOCALHOST/code/Robotic Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+CBuild AST from /Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/IGV_BRAINS/Bumblebee.cpp
+r0
+
+CBuild AST from /Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/IGV_BRAINS/main.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesd7f8d0224766b841^b62d02234766b841^---0#1#1#--18"Check dependencies36"B9A7DB60-8372-4122-BA2E-3B45D0CE57FE-
+
+CCompileC build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/Objects-normal/x86_64/Bumblebee.o /Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/IGV_BRAINS/Bumblebee.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s409356067.207980
+e409356068.622163
+r0
+xCompileC
+xbuild/IGV_BRAINS.build/Debug/IGV_BRAINS.build/Objects-normal/x86_64/Bumblebee.o
+x/Users/sterling/Desktop/Sterling's LOCALHOST/code/Robotic Code/IGV_BRAINS/IGV_BRAINS/Bumblebee.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Users/sterling/Desktop/Sterling's LOCALHOST/code/Robotic Code/IGV_BRAINS/IGV_BRAINS/Bumblebee.cpp:9:
+oIn file included from /Users/sterling/Desktop/Sterling's LOCALHOST/code/Robotic Code/IGV_BRAINS/IGV_BRAINS/Bumblebee.h:13:
+o/Users/sterling/Downloads/pcl-master/common/include/pcl/pcl_base.h:45:10: fatal error: 'pcl/pcl_macros.h' file not found
+o#include <pcl/pcl_macros.h>
+o         ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/sterling/Desktop/Sterling's LOCALHOST/code/Robotic Code/IGV_BRAINS/IGV_BRAINS/Bumblebee.cpp175"CompileC build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/Objects-normal/x86_64/Bumblebee.o IGV_BRAINS/Bumblebee.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerab2442234766b841^16519f244766b841^-426"In file included from /Users/sterling/Desktop/Sterling's LOCALHOST/code/Robotic Code/IGV_BRAINS/IGV_BRAINS/Bumblebee.cpp:9:In file included from /Users/sterling/Desktop/Sterling's LOCALHOST/code/Robotic Code/IGV_BRAINS/IGV_BRAINS/Bumblebee.h:13:/Users/sterling/Downloads/pcl-master/common/include/pcl/pcl_base.h:45:10: fatal error: 'pcl/pcl_macros.h' file not found#include <pcl/pcl_macros.h>         ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@33"'pcl/pcl_macros.h' file not found-409356068#18446744073709551615#0#2(2@123"In file included from /Users/sterling/Desktop/Sterling's LOCALHOST/code/Robotic Code/IGV_BRAINS/IGV_BRAINS/Bumblebee.cpp:9:-409356068#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@109"file:///Users/sterling/Desktop/Sterling's%20LOCALHOST/code/Robotic%20Code/IGV_BRAINS/IGV_BRAINS/Bumblebee.cpp0000000000000000^8#9#8#9#165#0#21"Apple LLVM 5.0 Notice--2@122"In file included from /Users/sterling/Desktop/Sterling's LOCALHOST/code/Robotic Code/IGV_BRAINS/IGV_BRAINS/Bumblebee.h:13:-409356068#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@107"file:///Users/sterling/Desktop/Sterling's%20LOCALHOST/code/Robotic%20Code/IGV_BRAINS/IGV_BRAINS/Bumblebee.h0000000000000000^12#9#12#9#252#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@73"file:///Users/sterling/Downloads/pcl-master/common/include/pcl/pcl_base.h0000000000000000^44#9#44#9#1942#0#29"Lexical or Preprocessor Issue--0#0#1#-19%DVTDocumentLocation4@109"file:///Users/sterling/Desktop/Sterling's%20LOCALHOST/code/Robotic%20Code/IGV_BRAINS/IGV_BRAINS/Bumblebee.cpp0000000000000000^3251"CompileC build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/Objects-normal/x86_64/Bumblebee.o IGV_BRAINS/Bumblebee.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/sterling/Desktop/Sterling's LOCALHOST/code/Robotic Code/IGV_BRAINS"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/IGV_BRAINS-generated-files.hmap -I/Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/IGV_BRAINS-own-target-headers.hmap -I/Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/IGV_BRAINS-all-target-headers.hmap -iquote /Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/IGV_BRAINS-project-headers.hmap -I/Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/DerivedSources/x86_64 -I/Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/DerivedSources -F/Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/Debug -MMD -MT dependencies -MF /Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/Objects-normal/x86_64/Bumblebee.d --serialize-diagnostics /Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/Objects-normal/x86_64/Bumblebee.dia -c /Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/IGV_BRAINS/Bumblebee.cpp -o /Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/Objects-normal/x86_64/Bumblebee.o36"CFCF097A-D59E-4F85-A73E-2D0E3996C759-
+b5A40932F-887F-4BE9-9ECE-52CA8ED2B11A
+
+CCompileC build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/Objects-normal/x86_64/main.o /Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/IGV_BRAINS/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s409356067.207834
+e409356068.622137
+r0
+xCompileC
+xbuild/IGV_BRAINS.build/Debug/IGV_BRAINS.build/Objects-normal/x86_64/main.o
+x/Users/sterling/Desktop/Sterling's LOCALHOST/code/Robotic Code/IGV_BRAINS/IGV_BRAINS/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Users/sterling/Desktop/Sterling's LOCALHOST/code/Robotic Code/IGV_BRAINS/IGV_BRAINS/main.cpp:10:
+o/Users/sterling/Downloads/pcl-master/common/include/pcl/pcl_base.h:45:10: fatal error: 'pcl/pcl_macros.h' file not found
+o#include <pcl/pcl_macros.h>
+o         ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Users/sterling/Desktop/Sterling's LOCALHOST/code/Robotic Code/IGV_BRAINS/IGV_BRAINS/main.cpp165"CompileC build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/Objects-normal/x86_64/main.o IGV_BRAINS/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler312542234766b841^904c9f244766b841^-299"In file included from /Users/sterling/Desktop/Sterling's LOCALHOST/code/Robotic Code/IGV_BRAINS/IGV_BRAINS/main.cpp:10:/Users/sterling/Downloads/pcl-master/common/include/pcl/pcl_base.h:45:10: fatal error: 'pcl/pcl_macros.h' file not found#include <pcl/pcl_macros.h>         ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@33"'pcl/pcl_macros.h' file not found-409356068#18446744073709551615#0#1(2@119"In file included from /Users/sterling/Desktop/Sterling's LOCALHOST/code/Robotic Code/IGV_BRAINS/IGV_BRAINS/main.cpp:10:-409356068#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@104"file:///Users/sterling/Desktop/Sterling's%20LOCALHOST/code/Robotic%20Code/IGV_BRAINS/IGV_BRAINS/main.cpp0000000000000000^9#9#9#9#180#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@73"file:///Users/sterling/Downloads/pcl-master/common/include/pcl/pcl_base.h0000000000000000^44#9#44#9#1942#0#29"Lexical or Preprocessor Issue--0#0#1#-19%DVTDocumentLocation4@104"file:///Users/sterling/Desktop/Sterling's%20LOCALHOST/code/Robotic%20Code/IGV_BRAINS/IGV_BRAINS/main.cpp0000000000000000^3221"CompileC build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/Objects-normal/x86_64/main.o IGV_BRAINS/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/sterling/Desktop/Sterling's LOCALHOST/code/Robotic Code/IGV_BRAINS"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/IGV_BRAINS-generated-files.hmap -I/Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/IGV_BRAINS-own-target-headers.hmap -I/Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/IGV_BRAINS-all-target-headers.hmap -iquote /Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/IGV_BRAINS-project-headers.hmap -I/Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/DerivedSources/x86_64 -I/Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/DerivedSources -F/Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/Debug -MMD -MT dependencies -MF /Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/Objects-normal/x86_64/main.dia -c /Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/IGV_BRAINS/main.cpp -o /Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/IGV_BRAINS.build/Debug/IGV_BRAINS.build/Objects-normal/x86_64/main.o36"524D6EBD-E6C6-4414-9F12-392F6CCBE269-
+b5A40932F-887F-4BE9-9ECE-52CA8ED2B11A
+
+CLd /Users/sterling/Desktop/Sterling\'s\ LOCALHOST/code/Robotic\ Code/IGV_BRAINS/build/Debug/IGV_BRAINS normal x86_64
+r0
+
