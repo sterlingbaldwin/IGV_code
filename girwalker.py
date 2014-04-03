@@ -1,91 +1,94 @@
+#!/usr/bin/env python
+
 import Tkinter as tk
 import sys
 import socket
+
 SLAVE = '169.254.159.73'
 PORT = 23
-
-print "Welcome to the IGV walker! Use the WASD keys to take Gir for a walk!\n"
-
-s = 0
-try:
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.connect((SLAVE, PORT))
-except:
-    print "A connection could not be made"
-    sys.exit(1)
-
-s.sendall('PR 5000,5000; AC 50000,50000; SP 5000,5000 \r')
-data = s.recv(1024)
-print data
-
-
-
 
 class App(object):
     def __init__(self):
         self.right = False
         self.left = False
         self.up = False
-	self.down = False
+        self.down = False
 
-    def keyPressed(self,event):
-        print "HERE"
-	print event.keysym
-        if event.keysym == 'Escape':
-            root.destroy()
+    def key_pressed(self, event):
         elif event.keysym == 'Right':
             self.right = True
         elif event.keysym == 'Left':
             self.left = True
         elif event.keysym == 'Up':
             self.up = True
-	elif event.keysym == 'down':
-	    self.down = True
+        elif event.keysym == 'Down':
+	        self.down = True
 
-    def keyReleased(self,event):
+    def key_released(self, event):
         if event.keysym == 'Right':
             self.right = False
         elif event.keysym == 'Left':
             self.left = False
         elif event.keysym == 'Up':
             self.up = False
-	elif event.keysym == 'down':
-	    self.down = False
+        elif event.keysym == 'Down':
+            self.down = False
 
+    def task(self, socket):
+        cmd = ""
+        if self.right:
+            cmd = 'JG 2000,0;'
+            print cmd
+        elif self.left:
+            cmd = 'JG 0,2000;'
+            print cmd
+        elif self.up:
+            cmd = 'JG 5000,5000;BG;'
+            print cmd
+        elif self.down:
+            cmd = 'ST'
+            print cmd
 
-    def task(self):
-	cmd = ""
-	
-    	if self.right:
-			cmd = 'BG A;'
-			print cmd
-   		elif self.left:
-			cmd = 'BG B;'
-			print cmd
-		elif self.up:
-			cmd = 'BG A,B;'
-			print cmd
-    	elif self.down:
-			cmd = s.sendall('PR -5000,-5000; AC -50000,-50000; SP -5000,-5000; BG; \r')
-			print cmd
-    	else:
-			cmd = ''
-    	s.sendall(cmd + '\r')
-    	data = s.recv(1024)
-    	print data
-    	root.after(20,self.task)
+        socket.sendall(cmd + '\r')
+        data = socket.recv(1024)
+        print data
 
+        root.after(20, self.task, socket)
 
-application = App()
-root = tk.Tk()
-print( "Press arrow key (Escape key to exit):" )
+def main():
+    print "Welcome to the IGV walker! Use the WASD keys to take Gir for a walk!\n"
 
-root.bind_all('<Key>', application.keyPressed)
-root.bind_all('<KeyRelease>', application.keyReleased)
-root.after(20,application.task)
+    # Make sure we can establish a connection with Gir
+    socket = 0
+    try:
+        #socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        #socket.connect((SLAVE, PORT))
+    except:
+        print "A connection could not be made, giving up."
+        sys.exit(1)
 
-root.mainloop()
+    # Setup keybindings
+    app = 0
+    root = 0
+    try:
+        app = Walker()
+        root = tk.Tk()
 
+        root.bind_all('<Key>', app.key_pressed)
+        root.bind_all('<KeyRelease>', app.key_released)
+        root.after(20, app.task, s)
+        root.withdraw()
+    except:
+        print "Could not bind keypress handlers, giving up."
 
+    try:
+        root.mainloop()
+        root.destroy()
+        socket.close()
+    except:
+        root.destroy()
+        socket.close()
+        raise
 
-
+if __name__ == '__main__':
+    main()
