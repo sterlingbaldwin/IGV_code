@@ -4,6 +4,7 @@ import socket
 import sys
 import os
 
+
 SLAVE = '192.168.1.2'
 PORT = 23
 

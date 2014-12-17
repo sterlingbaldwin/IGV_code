@@ -4,6 +4,7 @@ import socket
 import sys
 import os
 
+
 SLAVE = '192.168.1.2'
 PORT = 23
 
@@ -36,12 +37,6 @@ def main():
     if args.development:
         SLAVE = 'localhost'
         PORT = 50000
-
-    SLAVE = '192.168.1.2'
-    PORT = 23
-    #if os.system('nc -z ' + SLAVE + ' ' + PORT) is None:
-    #    print 'Could not create a connection to the designated server, giving up.'
-    #    sys.exit(1)
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     try:

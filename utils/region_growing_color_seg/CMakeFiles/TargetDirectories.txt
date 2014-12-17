@@ -1,0 +1,1 @@
+/home/igv/Desktop/IGV_code-master/region_growing_color_seg/CMakeFiles/region_growing_rgb_segmentation.dir
