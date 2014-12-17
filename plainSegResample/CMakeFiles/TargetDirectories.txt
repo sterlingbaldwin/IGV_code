@@ -1,0 +1,1 @@
+/home/igv/Desktop/IGV_code-master/plainSegResample/CMakeFiles/plainSegResample.dir
