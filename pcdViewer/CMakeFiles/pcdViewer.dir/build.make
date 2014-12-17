@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/igv/Desktop/IGV_code-master/pcdViewer
+CMAKE_SOURCE_DIR = /home/sterling/IGV_code-master/pcdViewer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/igv/Desktop/IGV_code-master/pcdViewer
+CMAKE_BINARY_DIR = /home/sterling/IGV_code-master/pcdViewer
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pcdViewer.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/pcdViewer.dir/flags.make
 
 CMakeFiles/pcdViewer.dir/pcdViewer.cpp.o: CMakeFiles/pcdViewer.dir/flags.make
 CMakeFiles/pcdViewer.dir/pcdViewer.cpp.o: pcdViewer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/igv/Desktop/IGV_code-master/pcdViewer/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/sterling/IGV_code-master/pcdViewer/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/pcdViewer.dir/pcdViewer.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcdViewer.dir/pcdViewer.cpp.o -c /home/igv/Desktop/IGV_code-master/pcdViewer/pcdViewer.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/pcdViewer.dir/pcdViewer.cpp.o -c /home/sterling/IGV_code-master/pcdViewer/pcdViewer.cpp
 
 CMakeFiles/pcdViewer.dir/pcdViewer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcdViewer.dir/pcdViewer.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/igv/Desktop/IGV_code-master/pcdViewer/pcdViewer.cpp > CMakeFiles/pcdViewer.dir/pcdViewer.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sterling/IGV_code-master/pcdViewer/pcdViewer.cpp > CMakeFiles/pcdViewer.dir/pcdViewer.cpp.i
 
 CMakeFiles/pcdViewer.dir/pcdViewer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcdViewer.dir/pcdViewer.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/igv/Desktop/IGV_code-master/pcdViewer/pcdViewer.cpp -o CMakeFiles/pcdViewer.dir/pcdViewer.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sterling/IGV_code-master/pcdViewer/pcdViewer.cpp -o CMakeFiles/pcdViewer.dir/pcdViewer.cpp.s
 
 CMakeFiles/pcdViewer.dir/pcdViewer.cpp.o.requires:
 .PHONY : CMakeFiles/pcdViewer.dir/pcdViewer.cpp.o.requires
@@ -81,20 +81,20 @@ pcdViewer_EXTERNAL_OBJECTS =
 
 pcdViewer: CMakeFiles/pcdViewer.dir/pcdViewer.cpp.o
 pcdViewer: CMakeFiles/pcdViewer.dir/build.make
-pcdViewer: /usr/lib/i386-linux-gnu/libboost_system.so
-pcdViewer: /usr/lib/i386-linux-gnu/libboost_filesystem.so
-pcdViewer: /usr/lib/i386-linux-gnu/libboost_thread.so
-pcdViewer: /usr/lib/i386-linux-gnu/libboost_date_time.so
-pcdViewer: /usr/lib/i386-linux-gnu/libboost_iostreams.so
-pcdViewer: /usr/lib/i386-linux-gnu/libboost_serialization.so
-pcdViewer: /usr/lib/i386-linux-gnu/libboost_chrono.so
-pcdViewer: /usr/lib/i386-linux-gnu/libpthread.so
+pcdViewer: /usr/lib/x86_64-linux-gnu/libboost_system.so
+pcdViewer: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+pcdViewer: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+pcdViewer: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+pcdViewer: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+pcdViewer: /usr/lib/x86_64-linux-gnu/libboost_serialization.so
+pcdViewer: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+pcdViewer: /usr/lib/x86_64-linux-gnu/libpthread.so
 pcdViewer: /usr/lib/libpcl_common.so
-pcdViewer: /usr/lib/i386-linux-gnu/libflann_cpp_s.a
+pcdViewer: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
 pcdViewer: /usr/lib/libpcl_kdtree.so
 pcdViewer: /usr/lib/libpcl_octree.so
 pcdViewer: /usr/lib/libpcl_search.so
-pcdViewer: /usr/lib/i386-linux-gnu/libqhull.so
+pcdViewer: /usr/lib/x86_64-linux-gnu/libqhull.so
 pcdViewer: /usr/lib/libpcl_surface.so
 pcdViewer: /usr/lib/libpcl_sample_consensus.so
 pcdViewer: /usr/lib/libOpenNI.so
@@ -126,18 +126,18 @@ pcdViewer: /usr/lib/libpcl_people.so
 pcdViewer: /usr/lib/libpcl_outofcore.so
 pcdViewer: /usr/lib/libpcl_tracking.so
 pcdViewer: /usr/lib/libpcl_apps.so
-pcdViewer: /usr/lib/i386-linux-gnu/libboost_system.so
-pcdViewer: /usr/lib/i386-linux-gnu/libboost_filesystem.so
-pcdViewer: /usr/lib/i386-linux-gnu/libboost_thread.so
-pcdViewer: /usr/lib/i386-linux-gnu/libboost_date_time.so
-pcdViewer: /usr/lib/i386-linux-gnu/libboost_iostreams.so
-pcdViewer: /usr/lib/i386-linux-gnu/libboost_serialization.so
-pcdViewer: /usr/lib/i386-linux-gnu/libboost_chrono.so
-pcdViewer: /usr/lib/i386-linux-gnu/libpthread.so
-pcdViewer: /usr/lib/i386-linux-gnu/libqhull.so
+pcdViewer: /usr/lib/x86_64-linux-gnu/libboost_system.so
+pcdViewer: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+pcdViewer: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+pcdViewer: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+pcdViewer: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+pcdViewer: /usr/lib/x86_64-linux-gnu/libboost_serialization.so
+pcdViewer: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+pcdViewer: /usr/lib/x86_64-linux-gnu/libpthread.so
+pcdViewer: /usr/lib/x86_64-linux-gnu/libqhull.so
 pcdViewer: /usr/lib/libOpenNI.so
 pcdViewer: /usr/lib/libOpenNI2.so
-pcdViewer: /usr/lib/i386-linux-gnu/libflann_cpp_s.a
+pcdViewer: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
 pcdViewer: /usr/lib/libvtkCommon.so.5.8.0
 pcdViewer: /usr/lib/libvtkFiltering.so.5.8.0
 pcdViewer: /usr/lib/libvtkImaging.so.5.8.0
@@ -200,6 +200,6 @@ CMakeFiles/pcdViewer.dir/clean:
 .PHONY : CMakeFiles/pcdViewer.dir/clean
 
 CMakeFiles/pcdViewer.dir/depend:
-	cd /home/igv/Desktop/IGV_code-master/pcdViewer && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/igv/Desktop/IGV_code-master/pcdViewer /home/igv/Desktop/IGV_code-master/pcdViewer /home/igv/Desktop/IGV_code-master/pcdViewer /home/igv/Desktop/IGV_code-master/pcdViewer /home/igv/Desktop/IGV_code-master/pcdViewer/CMakeFiles/pcdViewer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sterling/IGV_code-master/pcdViewer && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sterling/IGV_code-master/pcdViewer /home/sterling/IGV_code-master/pcdViewer /home/sterling/IGV_code-master/pcdViewer /home/sterling/IGV_code-master/pcdViewer /home/sterling/IGV_code-master/pcdViewer/CMakeFiles/pcdViewer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pcdViewer.dir/depend
 

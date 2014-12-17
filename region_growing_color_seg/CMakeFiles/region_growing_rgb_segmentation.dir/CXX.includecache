@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/igv/Desktop/IGV_code-master/region_growing_color_seg/region_growing_rgb_segmentation.cpp
+/home/sterling/IGV_code-master/region_growing_color_seg/region_growing_rgb_segmentation.cpp
 iostream
 -
 vector

@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/igv/Desktop/IGV_code-master/region_growing_color_seg
+CMAKE_SOURCE_DIR = /home/sterling/IGV_code-master/region_growing_color_seg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/igv/Desktop/IGV_code-master/region_growing_color_seg
+CMAKE_BINARY_DIR = /home/sterling/IGV_code-master/region_growing_color_seg
 
 # Include any dependencies generated for this target.
 include CMakeFiles/region_growing_rgb_segmentation.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/region_growing_rgb_segmentation.dir/flags.make
 
 CMakeFiles/region_growing_rgb_segmentation.dir/region_growing_rgb_segmentation.cpp.o: CMakeFiles/region_growing_rgb_segmentation.dir/flags.make
 CMakeFiles/region_growing_rgb_segmentation.dir/region_growing_rgb_segmentation.cpp.o: region_growing_rgb_segmentation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/igv/Desktop/IGV_code-master/region_growing_color_seg/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/sterling/IGV_code-master/region_growing_color_seg/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/region_growing_rgb_segmentation.dir/region_growing_rgb_segmentation.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/region_growing_rgb_segmentation.dir/region_growing_rgb_segmentation.cpp.o -c /home/igv/Desktop/IGV_code-master/region_growing_color_seg/region_growing_rgb_segmentation.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/region_growing_rgb_segmentation.dir/region_growing_rgb_segmentation.cpp.o -c /home/sterling/IGV_code-master/region_growing_color_seg/region_growing_rgb_segmentation.cpp
 
 CMakeFiles/region_growing_rgb_segmentation.dir/region_growing_rgb_segmentation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/region_growing_rgb_segmentation.dir/region_growing_rgb_segmentation.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/igv/Desktop/IGV_code-master/region_growing_color_seg/region_growing_rgb_segmentation.cpp > CMakeFiles/region_growing_rgb_segmentation.dir/region_growing_rgb_segmentation.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sterling/IGV_code-master/region_growing_color_seg/region_growing_rgb_segmentation.cpp > CMakeFiles/region_growing_rgb_segmentation.dir/region_growing_rgb_segmentation.cpp.i
 
 CMakeFiles/region_growing_rgb_segmentation.dir/region_growing_rgb_segmentation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/region_growing_rgb_segmentation.dir/region_growing_rgb_segmentation.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/igv/Desktop/IGV_code-master/region_growing_color_seg/region_growing_rgb_segmentation.cpp -o CMakeFiles/region_growing_rgb_segmentation.dir/region_growing_rgb_segmentation.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sterling/IGV_code-master/region_growing_color_seg/region_growing_rgb_segmentation.cpp -o CMakeFiles/region_growing_rgb_segmentation.dir/region_growing_rgb_segmentation.cpp.s
 
 CMakeFiles/region_growing_rgb_segmentation.dir/region_growing_rgb_segmentation.cpp.o.requires:
 .PHONY : CMakeFiles/region_growing_rgb_segmentation.dir/region_growing_rgb_segmentation.cpp.o.requires
@@ -81,20 +81,20 @@ region_growing_rgb_segmentation_EXTERNAL_OBJECTS =
 
 region_growing_rgb_segmentation: CMakeFiles/region_growing_rgb_segmentation.dir/region_growing_rgb_segmentation.cpp.o
 region_growing_rgb_segmentation: CMakeFiles/region_growing_rgb_segmentation.dir/build.make
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libboost_system.so
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libboost_filesystem.so
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libboost_thread.so
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libboost_date_time.so
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libboost_iostreams.so
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libboost_serialization.so
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libboost_chrono.so
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libpthread.so
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libboost_system.so
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libboost_serialization.so
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libpthread.so
 region_growing_rgb_segmentation: /usr/lib/libpcl_common.so
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libflann_cpp_s.a
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
 region_growing_rgb_segmentation: /usr/lib/libpcl_kdtree.so
 region_growing_rgb_segmentation: /usr/lib/libpcl_octree.so
 region_growing_rgb_segmentation: /usr/lib/libpcl_search.so
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libqhull.so
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libqhull.so
 region_growing_rgb_segmentation: /usr/lib/libpcl_surface.so
 region_growing_rgb_segmentation: /usr/lib/libpcl_sample_consensus.so
 region_growing_rgb_segmentation: /usr/lib/libOpenNI.so
@@ -126,18 +126,18 @@ region_growing_rgb_segmentation: /usr/lib/libpcl_people.so
 region_growing_rgb_segmentation: /usr/lib/libpcl_outofcore.so
 region_growing_rgb_segmentation: /usr/lib/libpcl_tracking.so
 region_growing_rgb_segmentation: /usr/lib/libpcl_apps.so
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libboost_system.so
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libboost_filesystem.so
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libboost_thread.so
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libboost_date_time.so
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libboost_iostreams.so
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libboost_serialization.so
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libboost_chrono.so
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libpthread.so
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libqhull.so
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libboost_system.so
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libboost_serialization.so
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libpthread.so
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libqhull.so
 region_growing_rgb_segmentation: /usr/lib/libOpenNI.so
 region_growing_rgb_segmentation: /usr/lib/libOpenNI2.so
-region_growing_rgb_segmentation: /usr/lib/i386-linux-gnu/libflann_cpp_s.a
+region_growing_rgb_segmentation: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
 region_growing_rgb_segmentation: /usr/lib/libvtkCommon.so.5.8.0
 region_growing_rgb_segmentation: /usr/lib/libvtkFiltering.so.5.8.0
 region_growing_rgb_segmentation: /usr/lib/libvtkImaging.so.5.8.0
@@ -200,6 +200,6 @@ CMakeFiles/region_growing_rgb_segmentation.dir/clean:
 .PHONY : CMakeFiles/region_growing_rgb_segmentation.dir/clean
 
 CMakeFiles/region_growing_rgb_segmentation.dir/depend:
-	cd /home/igv/Desktop/IGV_code-master/region_growing_color_seg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/igv/Desktop/IGV_code-master/region_growing_color_seg /home/igv/Desktop/IGV_code-master/region_growing_color_seg /home/igv/Desktop/IGV_code-master/region_growing_color_seg /home/igv/Desktop/IGV_code-master/region_growing_color_seg /home/igv/Desktop/IGV_code-master/region_growing_color_seg/CMakeFiles/region_growing_rgb_segmentation.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sterling/IGV_code-master/region_growing_color_seg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sterling/IGV_code-master/region_growing_color_seg /home/sterling/IGV_code-master/region_growing_color_seg /home/sterling/IGV_code-master/region_growing_color_seg /home/sterling/IGV_code-master/region_growing_color_seg /home/sterling/IGV_code-master/region_growing_color_seg/CMakeFiles/region_growing_rgb_segmentation.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/region_growing_rgb_segmentation.dir/depend
 

@@ -47,10 +47,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/igv/Desktop/IGV_code-master/region_growing_color_seg
+CMAKE_SOURCE_DIR = /home/sterling/IGV_code-master/region_growing_color_seg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/igv/Desktop/IGV_code-master/region_growing_color_seg
+CMAKE_BINARY_DIR = /home/sterling/IGV_code-master/region_growing_color_seg
 
 #=============================================================================
 # Target rules for target CMakeFiles/region_growing_rgb_segmentation.dir
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/igv/Desktop/IGV_code-master/region_growing_color_seg
 CMakeFiles/region_growing_rgb_segmentation.dir/all:
 	$(MAKE) -f CMakeFiles/region_growing_rgb_segmentation.dir/build.make CMakeFiles/region_growing_rgb_segmentation.dir/depend
 	$(MAKE) -f CMakeFiles/region_growing_rgb_segmentation.dir/build.make CMakeFiles/region_growing_rgb_segmentation.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/igv/Desktop/IGV_code-master/region_growing_color_seg/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/sterling/IGV_code-master/region_growing_color_seg/CMakeFiles  1
 	@echo "Built target region_growing_rgb_segmentation"
 .PHONY : CMakeFiles/region_growing_rgb_segmentation.dir/all
 
@@ -69,9 +69,9 @@ all: CMakeFiles/region_growing_rgb_segmentation.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/region_growing_rgb_segmentation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/igv/Desktop/IGV_code-master/region_growing_color_seg/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterling/IGV_code-master/region_growing_color_seg/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/region_growing_rgb_segmentation.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/igv/Desktop/IGV_code-master/region_growing_color_seg/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterling/IGV_code-master/region_growing_color_seg/CMakeFiles 0
 .PHONY : CMakeFiles/region_growing_rgb_segmentation.dir/rule
 
 # Convenience name for target.

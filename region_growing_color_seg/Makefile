@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/igv/Desktop/IGV_code-master/region_growing_color_seg
+CMAKE_SOURCE_DIR = /home/sterling/IGV_code-master/region_growing_color_seg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/igv/Desktop/IGV_code-master/region_growing_color_seg
+CMAKE_BINARY_DIR = /home/sterling/IGV_code-master/region_growing_color_seg
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,9 +69,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/igv/Desktop/IGV_code-master/region_growing_color_seg/CMakeFiles /home/igv/Desktop/IGV_code-master/region_growing_color_seg/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterling/IGV_code-master/region_growing_color_seg/CMakeFiles /home/sterling/IGV_code-master/region_growing_color_seg/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/igv/Desktop/IGV_code-master/region_growing_color_seg/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterling/IGV_code-master/region_growing_color_seg/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

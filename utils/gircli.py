@@ -4,7 +4,7 @@ import socket
 import sys
 import os
 
-SLAVE = '0.0.0.0'
+SLAVE = '192.168.1.2'
 PORT = 23
 
 def parse_args():

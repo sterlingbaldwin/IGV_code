@@ -421,15 +421,14 @@ int save3dPoints( FC2::Image      const & grabbedImage,
 
   
     // Save points to disk
-    const char * pFilename = "out.pts";
-    pPointFile = fopen( pFilename, "w+" );
+    pPointFile = fopen( outname.c_str(), "w+" );
     if ( pPointFile != NULL )
     {
-        printf("Opening output file %s\n", pFilename);
+        printf("Opening output file %s\n", outname);
     }
     else
     {
-        printf("Error opening output file %s\n", pFilename);
+        printf("Error opening output file %s\n", outname);
         return 1;
     }
 
@@ -484,27 +483,7 @@ int save3dPoints( FC2::Image      const & grabbedImage,
     }
 
     pcl::io::savePCDFile (outname.c_str(), *cloud);
-    /*
-    boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer (new pcl::visualization::PCLVisualizer ("GIR VIEWER"));
-    viewer->setBackgroundColor (0, 0, 0);
-    pcl::visualization::PointCloudColorHandlerRGBField<pcl::PointXYZRGB> rgb(cloud);
-    viewer->addPointCloud<pcl::PointXYZRGB> (cloud, rgb, "sample cloud");
-    viewer->setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 3, "sample cloud");
-    viewer->addCoordinateSystem (1.0);
-    viewer->initCameraParameters ();
-    while (!viewer->wasStopped ())
-    {
-        viewer->spinOnce (100);
-        boost::this_thread::sleep (boost::posix_time::microseconds (100000));
-    }
-    /*fclose( pPointFile );
-    printf( "Points in file: %d\n", nPoints );
-    pcl::visualization::CloudViewer viewer ("Simple Cloud Viewer");
-    viewer.showCloud (cloud);
-    while (!viewer.wasStopped ())
-    {
-    }
-    */
+    
     return 0;
 
 }

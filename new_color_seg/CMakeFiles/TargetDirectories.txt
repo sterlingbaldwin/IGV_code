@@ -1,0 +1,1 @@
+/home/sterling/IGV_code-master/new_color_seg/CMakeFiles/new_seg.dir

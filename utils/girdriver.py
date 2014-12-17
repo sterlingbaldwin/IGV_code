@@ -23,24 +23,24 @@ class TextPrint:
         textBitmap = self.font.render(textString, True, BLACK)
         screen.blit(textBitmap, [self.x, self.y])
         self.y += self.line_height
-        
+
     def reset(self):
         self.x = 10
         self.y = 10
         self.line_height = 15
-        
+
     def indent(self):
         self.x += 10
-        
+
     def unindent(self):
         self.x -= 10
-    
+
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 try:
     print "Connecting to galil at", GALILIP
-    sock.connect((SLAVE, PORT))
-    data = sock.recv(1024)
+    #sock.connect((GALILIP, GALILPORT))
+    #data = sock.recv(1024)
     print data
 except:
     print 'A connection could not be made to the designated server, giving up.'
@@ -49,11 +49,11 @@ except:
 
 print "Successfully connected, initializing movement variables"
 cmd = 'AC 10000,10000; DC 10000,10000;\r'
-sock.sendall(cmd)
+#sock.sendall(cmd)
 forwardMovement = 0
 turnMovement = 0
 pygame.init()
- 
+
 # Set the width and height of the screen [width,height]
 size = [500, 700]
 screen = pygame.display.set_mode(size)
@@ -68,7 +68,7 @@ clock = pygame.time.Clock()
 
 # Initialize the joysticks
 pygame.joystick.init()
-    
+
 # Get ready to print
 textPrint = TextPrint()
 
@@ -78,14 +78,14 @@ while done==False:
     for event in pygame.event.get(): # User did something
         if event.type == pygame.QUIT: # If user clicked close
             done=True # Flag that we are done so we exit this loop
-        
+
         # Possible joystick actions: JOYAXISMOTION JOYBALLMOTION JOYBUTTONDOWN JOYBUTTONUP JOYHATMOTION
         if event.type == pygame.JOYBUTTONDOWN:
             print("Joystick button pressed.")
         if event.type == pygame.JOYBUTTONUP:
             print("Joystick button released.")
-            
- 
+
+
     # DRAWING STEP
     # First, clear the screen to white. Don't put other drawing commands
     # above this, or they will be erased with this command.
@@ -97,27 +97,27 @@ while done==False:
 
     textPrint.printt(screen, "Number of joysticks: {}".format(joystick_count) )
     textPrint.indent()
-    
+
     # For each joystick:
     for i in range(joystick_count):
         lMotor = 0
         rMotor = 0
         joystick = pygame.joystick.Joystick(i)
         joystick.init()
-    
+
         textPrint.printt(screen, "Joystick {}".format(i) )
         textPrint.indent()
-    
+
         # Get the name from the OS for the controller/joystick
         name = joystick.get_name()
         textPrint.printt(screen, "Joystick name: {}".format(name) )
-        
+
         # Usually axis run in pairs, up/down for one, and left/right for
         # the other.
         axes = joystick.get_numaxes()
         textPrint.printt(screen, "Number of axes: {}".format(axes) )
         textPrint.indent()
-        
+
         for i in range( axes ):
             axis = joystick.get_axis( i )
             if i == 1 and abs(axis) > 0.1:
@@ -137,7 +137,7 @@ while done==False:
             cmd = 'ST;'
         else:
             cmd = 'JG,'+ str(int(lMotor)) + ',' + str(int(rMotor)) + ';BG;\r'
-        sock.sendall(cmd)
+        #sock.sendall(cmd)
         textPrint.printt(screen, "lMotor value: {:>6.3f}".format(lMotor))
         textPrint.printt(screen, "rMotor value: {:>6.3f}".format(rMotor))
         textPrint.printt(screen, "Sending cmd: " + cmd)
@@ -149,7 +149,7 @@ while done==False:
             button = joystick.get_button( i )
             textPrint.printt(screen, "Button {:>2} value: {}".format(i,button) )
         textPrint.unindent()
-            
+
         # Hat switch. All or nothing for direction, not like joysticks.
         # Value comes back in an array.
         hats = joystick.get_numhats()
@@ -160,18 +160,18 @@ while done==False:
             hat = joystick.get_hat( i )
             textPrint.printt(screen, "Hat {} value: {}".format(i, str(hat)) )
         textPrint.unindent()
-        
+
         textPrint.unindent()
 
-    
+
     # ALL CODE TO DRAW SHOULD GO ABOVE THIS COMMENT
-    
+
     # Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
 
     # Limit to 20 frames per second
     clock.tick(20)
-    
+
 # Close the window and quit.
 # If you forget this line, the program will 'hang'
 # on exit if running from IDLE.

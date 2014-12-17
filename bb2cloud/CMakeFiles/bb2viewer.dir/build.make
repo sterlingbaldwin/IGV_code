@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/igv/Desktop/IGV_code-master/bb2cloud
+CMAKE_SOURCE_DIR = /home/sterling/IGV_code-master/bb2cloud
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/igv/Desktop/IGV_code-master/bb2cloud
+CMAKE_BINARY_DIR = /home/sterling/IGV_code-master/bb2cloud
 
 # Include any dependencies generated for this target.
 include CMakeFiles/bb2viewer.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/bb2viewer.dir/flags.make
 
 CMakeFiles/bb2viewer.dir/bb2viewer.cpp.o: CMakeFiles/bb2viewer.dir/flags.make
 CMakeFiles/bb2viewer.dir/bb2viewer.cpp.o: bb2viewer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/igv/Desktop/IGV_code-master/bb2cloud/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/sterling/IGV_code-master/bb2cloud/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/bb2viewer.dir/bb2viewer.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/bb2viewer.dir/bb2viewer.cpp.o -c /home/igv/Desktop/IGV_code-master/bb2cloud/bb2viewer.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/bb2viewer.dir/bb2viewer.cpp.o -c /home/sterling/IGV_code-master/bb2cloud/bb2viewer.cpp
 
 CMakeFiles/bb2viewer.dir/bb2viewer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bb2viewer.dir/bb2viewer.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/igv/Desktop/IGV_code-master/bb2cloud/bb2viewer.cpp > CMakeFiles/bb2viewer.dir/bb2viewer.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/sterling/IGV_code-master/bb2cloud/bb2viewer.cpp > CMakeFiles/bb2viewer.dir/bb2viewer.cpp.i
 
 CMakeFiles/bb2viewer.dir/bb2viewer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bb2viewer.dir/bb2viewer.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/igv/Desktop/IGV_code-master/bb2cloud/bb2viewer.cpp -o CMakeFiles/bb2viewer.dir/bb2viewer.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/sterling/IGV_code-master/bb2cloud/bb2viewer.cpp -o CMakeFiles/bb2viewer.dir/bb2viewer.cpp.s
 
 CMakeFiles/bb2viewer.dir/bb2viewer.cpp.o.requires:
 .PHONY : CMakeFiles/bb2viewer.dir/bb2viewer.cpp.o.requires
@@ -81,20 +81,20 @@ bb2viewer_EXTERNAL_OBJECTS =
 
 bb2viewer: CMakeFiles/bb2viewer.dir/bb2viewer.cpp.o
 bb2viewer: CMakeFiles/bb2viewer.dir/build.make
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_system.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_filesystem.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_thread.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_date_time.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_iostreams.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_serialization.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_chrono.so
-bb2viewer: /usr/lib/i386-linux-gnu/libpthread.so
+bb2viewer: /usr/lib/x86_64-linux-gnu/libboost_system.so
+bb2viewer: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+bb2viewer: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+bb2viewer: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+bb2viewer: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+bb2viewer: /usr/lib/x86_64-linux-gnu/libboost_serialization.so
+bb2viewer: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+bb2viewer: /usr/lib/x86_64-linux-gnu/libpthread.so
 bb2viewer: /usr/lib/libpcl_common.so
-bb2viewer: /usr/lib/i386-linux-gnu/libflann_cpp_s.a
+bb2viewer: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
 bb2viewer: /usr/lib/libpcl_kdtree.so
 bb2viewer: /usr/lib/libpcl_octree.so
 bb2viewer: /usr/lib/libpcl_search.so
-bb2viewer: /usr/lib/i386-linux-gnu/libqhull.so
+bb2viewer: /usr/lib/x86_64-linux-gnu/libqhull.so
 bb2viewer: /usr/lib/libpcl_surface.so
 bb2viewer: /usr/lib/libpcl_sample_consensus.so
 bb2viewer: /usr/lib/libOpenNI.so
@@ -126,18 +126,18 @@ bb2viewer: /usr/lib/libpcl_people.so
 bb2viewer: /usr/lib/libpcl_outofcore.so
 bb2viewer: /usr/lib/libpcl_tracking.so
 bb2viewer: /usr/lib/libpcl_apps.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_system.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_filesystem.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_thread.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_date_time.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_iostreams.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_serialization.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_chrono.so
-bb2viewer: /usr/lib/i386-linux-gnu/libpthread.so
-bb2viewer: /usr/lib/i386-linux-gnu/libqhull.so
+bb2viewer: /usr/lib/x86_64-linux-gnu/libboost_system.so
+bb2viewer: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+bb2viewer: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+bb2viewer: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+bb2viewer: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+bb2viewer: /usr/lib/x86_64-linux-gnu/libboost_serialization.so
+bb2viewer: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+bb2viewer: /usr/lib/x86_64-linux-gnu/libpthread.so
+bb2viewer: /usr/lib/x86_64-linux-gnu/libqhull.so
 bb2viewer: /usr/lib/libOpenNI.so
 bb2viewer: /usr/lib/libOpenNI2.so
-bb2viewer: /usr/lib/i386-linux-gnu/libflann_cpp_s.a
+bb2viewer: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
 bb2viewer: /usr/lib/libvtkCommon.so.5.8.0
 bb2viewer: /usr/lib/libvtkFiltering.so.5.8.0
 bb2viewer: /usr/lib/libvtkImaging.so.5.8.0
@@ -158,23 +158,12 @@ bb2viewer: /usr/lib/libpnmutils.a
 bb2viewer: /usr/lib/libflycapture.so
 bb2viewer: /usr/lib/libflycapture2bridge.so
 bb2viewer: /usr/lib/i386-linux-gnu/libpthread.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_system.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_filesystem.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_thread.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_date_time.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_iostreams.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_serialization.so
-bb2viewer: /usr/lib/i386-linux-gnu/libboost_chrono.so
 bb2viewer: /usr/lib/libpcl_common.so
-bb2viewer: /usr/lib/i386-linux-gnu/libflann_cpp_s.a
 bb2viewer: /usr/lib/libpcl_kdtree.so
 bb2viewer: /usr/lib/libpcl_octree.so
 bb2viewer: /usr/lib/libpcl_search.so
-bb2viewer: /usr/lib/i386-linux-gnu/libqhull.so
 bb2viewer: /usr/lib/libpcl_surface.so
 bb2viewer: /usr/lib/libpcl_sample_consensus.so
-bb2viewer: /usr/lib/libOpenNI.so
-bb2viewer: /usr/lib/libOpenNI2.so
 bb2viewer: /usr/lib/libpcl_io.so
 bb2viewer: /usr/lib/libpcl_filters.so
 bb2viewer: /usr/lib/libpcl_features.so
@@ -191,6 +180,7 @@ bb2viewer: /usr/lib/libtriclops.so
 bb2viewer: /usr/lib/libpnmutils.a
 bb2viewer: /usr/lib/libflycapture.so
 bb2viewer: /usr/lib/libflycapture2bridge.so
+bb2viewer: /usr/lib/i386-linux-gnu/libpthread.so
 bb2viewer: /usr/lib/libvtkViews.so.5.8.0
 bb2viewer: /usr/lib/libvtkInfovis.so.5.8.0
 bb2viewer: /usr/lib/libvtkWidgets.so.5.8.0
@@ -220,6 +210,6 @@ CMakeFiles/bb2viewer.dir/clean:
 .PHONY : CMakeFiles/bb2viewer.dir/clean
 
 CMakeFiles/bb2viewer.dir/depend:
-	cd /home/igv/Desktop/IGV_code-master/bb2cloud && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/igv/Desktop/IGV_code-master/bb2cloud /home/igv/Desktop/IGV_code-master/bb2cloud /home/igv/Desktop/IGV_code-master/bb2cloud /home/igv/Desktop/IGV_code-master/bb2cloud /home/igv/Desktop/IGV_code-master/bb2cloud/CMakeFiles/bb2viewer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sterling/IGV_code-master/bb2cloud && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sterling/IGV_code-master/bb2cloud /home/sterling/IGV_code-master/bb2cloud /home/sterling/IGV_code-master/bb2cloud /home/sterling/IGV_code-master/bb2cloud /home/sterling/IGV_code-master/bb2cloud/CMakeFiles/bb2viewer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/bb2viewer.dir/depend
 

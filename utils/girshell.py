@@ -19,8 +19,8 @@ def mainloop(sock):
         cmd = raw_input('>> ')
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.connect((SLAVE, PORT))
-        if cmd == 'quit':
-            sock.sendall('ST;\r')    
+        if cmd == 'quit' or cmd == 'q':
+            sock.sendall('ST;\r')
             sock.close()
             break
         else:
@@ -36,7 +36,7 @@ def main():
     if args.development:
         SLAVE = 'localhost'
         PORT = 50000
-    
+
     SLAVE = '192.168.1.2'
     PORT = 23
     #if os.system('nc -z ' + SLAVE + ' ' + PORT) is None:

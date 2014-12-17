@@ -1,4 +1,4 @@
-# Install script for directory: /home/igv/Desktop/IGV_code-master/bb2cloud
+# Install script for directory: /home/sterling/IGV_code-master/bb2cloud
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/igv/Desktop/IGV_code-master/bb2cloud/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/sterling/IGV_code-master/bb2cloud/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/igv/Desktop/IGV_code-master/bb2cloud/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/sterling/IGV_code-master/bb2cloud/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

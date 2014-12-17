@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/igv/Desktop/IGV_code-master/pcdViewer/pcdViewer.cpp" "/home/igv/Desktop/IGV_code-master/pcdViewer/CMakeFiles/pcdViewer.dir/pcdViewer.cpp.o"
+  "/home/sterling/IGV_code-master/pcdViewer/pcdViewer.cpp" "/home/sterling/IGV_code-master/pcdViewer/CMakeFiles/pcdViewer.dir/pcdViewer.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

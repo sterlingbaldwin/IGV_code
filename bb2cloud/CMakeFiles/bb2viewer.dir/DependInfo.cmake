@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/igv/Desktop/IGV_code-master/bb2cloud/bb2viewer.cpp" "/home/igv/Desktop/IGV_code-master/bb2cloud/CMakeFiles/bb2viewer.dir/bb2viewer.cpp.o"
+  "/home/sterling/IGV_code-master/bb2cloud/bb2viewer.cpp" "/home/sterling/IGV_code-master/bb2cloud/CMakeFiles/bb2viewer.dir/bb2viewer.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
