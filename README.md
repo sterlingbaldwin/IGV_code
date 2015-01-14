@@ -56,6 +56,11 @@ software systems to communicate and interpret sensor data.
                                       ground (and then must be cones/barrels/flags) check if their flags, and otherwise also
                                       place their corresponding points to the non-passable set.
 
+                                  Once we have the location of all the obstacles accounted for, we mark the grid location
+                                      that is both the closest to the destination, but also adjacent to unexplored locations.
+                                      When we have our short term target, then we can create a minimum-spanning tree and
+                                      follow its branch to the target node.
+
 
             Galil: The controller is set to a static IP address of 192.168.1.3. The controller can be
                     communicated directly over its socket interface, which we do with a simple python
