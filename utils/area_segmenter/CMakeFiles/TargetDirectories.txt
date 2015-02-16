@@ -1,0 +1,1 @@
+/home/sterling/projects/IGV_code/utils/area_segmenter/CMakeFiles/area_segmenter.dir
