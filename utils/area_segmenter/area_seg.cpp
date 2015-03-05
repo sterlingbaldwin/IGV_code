@@ -37,11 +37,16 @@ int main(int argc, char** argv)
 
 pcl::PointCloud<pcl::PointXYZRGB> area_seg(float startx, float stopx, float starty, float stopy, float startz, float stopz, pcl::PointCloud<pcl::PointXYZRGB>::Ptr inCloud, std::string outname) {
 
-	std::cout << "point 1" <<std::endl;
+	std::cout << "area_seg begin" <<std::endl;
 	pcl::PointCloud<pcl::PointXYZRGB> outCloud;
 	FILE             * pPointFile;
 
+	std::cout << "inCloud height:" << inCloud->height << std::endl;
+	std::cout << "inCloud width:" << inCloud->width << std::endl;
+	int denied_counter = 0;
+	int accepted_counter = 0;
 	for(int i = 0; i < inCloud->points.size(); i++) {
+
 		if (inCloud->points[i].x >= startx
 				&& inCloud->points[i].x <= stopx
 				&& inCloud->points[i].y >= starty
@@ -49,28 +54,35 @@ pcl::PointCloud<pcl::PointXYZRGB> area_seg(float startx, float stopx, float star
 				&& inCloud->points[i].z >= startz
 				&& inCloud->points[i].z <= stopz) 
 		{
-			std::cout << "File "<<std::endl;
+			//std::cout << "point accepted "<<std::endl;
 			outCloud.points.push_back(inCloud->points[i]);
-			//hacks to get around width*height error
-				outCloud.width = 1;
-				outCloud.height = outCloud.points.size();
-
+			//std::cout << "point[i].x: " << inCloud->points[i].x << " startx: " << startx << " stopx: " << stopx << std::endl;
+			//std::cout << "point[i].y: " << inCloud->points[i].y << " starty: " << starty << " stopy: " << stopy << std::endl;
+			//std::cout << "point[i].z: " << inCloud->points[i].z << " startz: " << startz << " stopz: " << stopz << std::endl;
+		  accepted_counter++;
+		}
+		else
+		{
+		  denied_counter++;
 		}
 	}
-		std::cout << "point height:" << outCloud.height << std::endl;
-		std::cout << "point width:" << outCloud.width << std::endl;
-    // Save points to disk
-    pPointFile = fopen( outname.c_str(), "w+" );
-    if ( pPointFile != NULL ) {
-			//printf("Opening output file %s\n", outname);
-			std::cout << "point 4:" << std::endl;
-		//	pcl::io::savePCDFile (outname.c_str(), outCloud);
-			//std::cout << "File " << outname << " written sucessfully"<<std::endl;
-			std::cout << "File " << outname << "not written sucessfully"<<std::endl;
-    }
-    else {
-			//printf("Error opening output file %s\n", outname);
-			std::cout<<"Error opening output file"<< outname << std::endl;
+			std::cout << "points accepted: " << accepted_counter
+			 << " points denied: " << denied_counter
+			 << " ratio: " << (float)accepted_counter/(float)denied_counter <<std::endl;
+	//hacks to get around width*height error (they both are equal to 0 here)
+		outCloud.width = 1;
+		outCloud.height = outCloud.points.size();
+	// Save points to disk
+	pPointFile = fopen( outname.c_str(), "w+" );
+	if ( pPointFile != NULL ) {
+		//printf("Opening output file %s\n", outname);
+		std::cout << "***saving***" << std::endl;
+			pcl::io::savePCDFile (outname.c_str(), outCloud);
+		std::cout << "File " << outname << "written sucessfully"<<std::endl;
+	}
+	else {
+		//printf("Error opening output file %s\n", outname);
+		std::cout<<"Error opening output file"<< outname << std::endl;
 	}
 
 	return outCloud;
@@ -78,7 +90,7 @@ pcl::PointCloud<pcl::PointXYZRGB> area_seg(float startx, float stopx, float star
 
 float * seg_info(pcl::PointCloud<pcl::PointXYZRGB>::Ptr incloud) {
 	std::cout<< "Seg Info" << std::endl;
-	float highest_y=0, highest_x=0,highest_z=0, lowest_x=100, lowest_y=100, lowest_z=100;
+	float highest_y=-100, highest_x=-100, highest_z=-100, lowest_x=100, lowest_y=100, lowest_z=100;
 	float * array_pointer;
 	float info_array[6];
 	//for cloud
@@ -127,9 +139,9 @@ void passMap(pcl::PointCloud<pcl::PointXYZRGB>::Ptr incloud) {
 	int minBound_z = 4;
 	int maxBound_z = 5;
 	int finalSize = 6;
-	//height //TODO: change for up to 15 degree arc
-	float floor_min = -1;
-	float floor_max = 1;
+	//these values could be anything (so longs as they grab all points)  since it will be reading a pcd that has already been segmented as the floor
+	float floor_min = -5;
+	float floor_max = 5;
 
 	pcl::PointCloud<pcl::PointXYZRGB> finalCloud;
 	pcl::PointCloud<pcl::PointXYZRGB> z_row_cloud;
@@ -137,15 +149,18 @@ void passMap(pcl::PointCloud<pcl::PointXYZRGB>::Ptr incloud) {
 
 	//get bounds for next line
 	info_array = seg_info(incloud);
-	for (float z=info_array[minBound_z]; z=info_array[maxBound_z]; z+=0.35){
-		//set outname
+		std::cout << "info_array[minBound_z] " << info_array[minBound_z]  << " max: " << info_array[maxBound_z] <<std::endl;
+	for (float z=info_array[minBound_z]; z<info_array[maxBound_z]; z+=0.35){
+		std::cout << "z: " << z << std::endl;
+		//set outname 
 			std::ostringstream ss;
-			ss << "z_row_" <<std::setprecision(4)<< z;
+			//strange problem using std::string.to_string(float) : error says string is not a part of std, and/or to_string is defined in bb2...
+			ss << "z_row_" << std::setprecision(4)<< z;
 			std::string outname = ss.str();
 			std::cout << "Z Segment outname: " << outname << std::endl;
 		//segment for z row cloud
+		info_array = seg_info(incloud);
 		z_row_cloud =  area_seg(info_array[minBound_x], info_array[maxBound_x], floor_min, floor_max, z, z+.35, incloud, outname) ;
-		std::cout<< "second fails" <<std::endl;
 
 		pcl::PointCloud<pcl::PointXYZRGB>::Ptr z_row_pointer(&z_row_cloud);
 		//get bounds for new seg with x 
@@ -156,8 +171,9 @@ void passMap(pcl::PointCloud<pcl::PointXYZRGB>::Ptr incloud) {
 			ss << "x_row_"  <<xStep;
 			std::cout << "X Segment outname: " << ss.str() << std::endl;
 
+			info_array = seg_info(z_row_pointer);
 		  x_partFrom_z_row = area_seg(xStep, xStep+0.35, floor_min, floor_max, z, z+0.35, z_row_pointer, outname) ;
-			std::cout<<"x part from z row size"<< x_partFrom_z_row.size() <<std::endl;
+			std::cout<< "x part from z row size: " << x_partFrom_z_row.size() <<std::endl;
 			if(x_partFrom_z_row.size()>800) {
 			//area has enough points to be safe
 				r=0; b=255;
