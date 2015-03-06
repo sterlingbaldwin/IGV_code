@@ -56,29 +56,29 @@ pcl::PointCloud<pcl::PointXYZRGB> area_seg(float startx, float stopx, float star
 		{
 			//std::cout << "point accepted "<<std::endl;
 			outCloud.points.push_back(inCloud->points[i]);
-			//std::cout << "point[i].x: " << inCloud->points[i].x << " startx: " << startx << " stopx: " << stopx << std::endl;
-			//std::cout << "point[i].y: " << inCloud->points[i].y << " starty: " << starty << " stopy: " << stopy << std::endl;
-			//std::cout << "point[i].z: " << inCloud->points[i].z << " startz: " << startz << " stopz: " << stopz << std::endl;
 		  accepted_counter++;
 		}
 		else
 		{
 		  denied_counter++;
+			//std::cout << "point[i].x: " << inCloud->points[i].x << " startx: " << startx << " stopx: " << stopx << std::endl;
+			//std::cout << "point[i].y: " << inCloud->points[i].y << " starty: " << starty << " stopy: " << stopy << std::endl;
+			//std::cout << "point[i].z: " << inCloud->points[i].z << " startz: " << startz << " stopz: " << stopz << std::endl;
 		}
 	}
 			std::cout << "points accepted: " << accepted_counter
 			 << " points denied: " << denied_counter
-			 << " ratio: " << (float)accepted_counter/(float)denied_counter <<std::endl;
+			 << " ratio: " << (float)accepted_counter/(float)denied_counter*100 << "%" <<std::endl;
 	//hacks to get around width*height error (they both are equal to 0 here)
 		outCloud.width = 1;
-		outCloud.height = outCloud.points.size();
+		outCloud.height = accepted_counter;
 	// Save points to disk
 	pPointFile = fopen( outname.c_str(), "w+" );
 	if ( pPointFile != NULL ) {
 		//printf("Opening output file %s\n", outname);
-		std::cout << "***saving***" << std::endl;
+		std::cout << "***saving*** " << outCloud.points.size() << " points" << std::endl;
 			pcl::io::savePCDFile (outname.c_str(), outCloud);
-		std::cout << "File " << outname << "written sucessfully"<<std::endl;
+		std::cout << "File " << outname << " written sucessfully"<<std::endl;
 	}
 	else {
 		//printf("Error opening output file %s\n", outname);
@@ -148,14 +148,15 @@ void passMap(pcl::PointCloud<pcl::PointXYZRGB>::Ptr incloud) {
 	pcl::PointCloud<pcl::PointXYZRGB> x_partFrom_z_row;
 
 	//get bounds for next line
+			std::cout << "Original Cloud" << std::endl;
 	info_array = seg_info(incloud);
 		std::cout << "info_array[minBound_z] " << info_array[minBound_z]  << " max: " << info_array[maxBound_z] <<std::endl;
-	for (float z=info_array[minBound_z]; z<info_array[maxBound_z]; z+=0.35){
+	for (float z=info_array[minBound_z]; z<=info_array[maxBound_z]; z+=0.35){
 		std::cout << "z: " << z << std::endl;
 		//set outname 
 			std::ostringstream ss;
 			//strange problem using std::string.to_string(float) : error says string is not a part of std, and/or to_string is defined in bb2...
-			ss << "z_row_" << std::setprecision(4)<< z;
+			ss << "z_row_" << std::setprecision(3)<< z << ".pcd";
 			std::string outname = ss.str();
 			std::cout << "Z Segment outname: " << outname << std::endl;
 		//segment for z row cloud
@@ -164,26 +165,33 @@ void passMap(pcl::PointCloud<pcl::PointXYZRGB>::Ptr incloud) {
 
 		pcl::PointCloud<pcl::PointXYZRGB>::Ptr z_row_pointer(&z_row_cloud);
 		//get bounds for new seg with x 
+			std::cout << "Z row info" << std::endl;
 		info_array = seg_info(z_row_pointer);
 		//separate z into x segments
-		for (float xStep=info_array[minBound_x]; xStep=info_array[maxBound_x]; xStep+=0.35){
+
+		for (float xStep=info_array[minBound_x]; xStep<=info_array[maxBound_x]-.3; xStep+=0.35){
+			std::cout << "xStep: " << xStep << std::endl;
 			std::ostringstream ss;
-			ss << "x_row_"  <<xStep;
+			ss << "x_row_"  << std::setprecision(3) << xStep << ".pcd";
 			std::cout << "X Segment outname: " << ss.str() << std::endl;
 
 			info_array = seg_info(z_row_pointer);
 		  x_partFrom_z_row = area_seg(xStep, xStep+0.35, floor_min, floor_max, z, z+0.35, z_row_pointer, outname) ;
 			std::cout<< "x part from z row size: " << x_partFrom_z_row.size() <<std::endl;
-			if(x_partFrom_z_row.size()>800) {
-			//area has enough points to be safe
-				r=0; b=255;
-			}
-			else { 
-				r=255; b=0;
-			}
-			int32_t rgb = (r << 16) | (g << 8) | b; 
-			for(int i =0; i<x_partFrom_z_row.points.size(); i++){
-				x_partFrom_z_row.points[i].rgba = *(float *)(&rgb); //colors the point 
+			//eliminate data that is too small for a cloud.
+			if(x_partFrom_z_row.size()<100) {
+				if(x_partFrom_z_row.size()>800) {
+					//area has enough points to be safe
+						r=0; b=255;
+				}
+				else { 
+					r=255; b=0;
+				}
+				int32_t rgb = (r << 16) | (g << 8) | b; 
+				for(int i =0; i<x_partFrom_z_row.points.size(); i++){
+					x_partFrom_z_row.points[i].rgba = *(float *)(&rgb); //colors the point 
+				}
+
 				finalCloud += x_partFrom_z_row;
 			}
 		}
